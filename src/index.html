@@ -6,6 +6,58 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="formContainer">
+        <form id="form" novalidate>
+                <div class="inputContainer">
+                    <label for="email">email</label>
+                    <input id="email" type="email" name="email" required>
+                    <div class="error" id="emailError"></div>    
+                </div>
     
+
+                <div class="inputContainer">
+                    <label for="country">Country</label>
+                    <!-- <input id="country" type="text" name="country" required> -->
+                    <select name="country" id="country" required>
+                        <option value="" disabled selected>Please select a country</option>
+                    </select> 
+                    <span class="error" id="countryError"></span>   
+
+                </div>
+
+    
+
+                <div class="inputContainer">
+                    <label for="zip">Zip-Code</label>
+                    <input id="zip" type="number" name="zip"  required> 
+                    <span class="error" id="zipError"></span>    
+
+                </div>
+
+    
+
+                
+                <div class="inputContainer">
+                    <label for="password">password</label>
+                    <input id="password" type="password" name="password" required>
+                    <span class="error" id="passwordError"></span>    
+
+                </div>
+
+                
+                
+                <div class="inputContainer">
+                    <label for="passwordConfirm">passwordConfirm</label>
+                    <input id="passwordConfirm" type="password" name="password" required> 
+                    <span class="error" id="passwordConfirmError"></span>    
+                </div>
+
+
+                <div class="inputContainer">
+                    <button type="submit" id="submit">submit</button>
+                </div>
+        </form>
+
+    </div>
 </body>
 </html>

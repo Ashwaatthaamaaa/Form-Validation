@@ -63,6 +63,10 @@ module.exports = (env, argv) => {
       alias: {
         '@': path.resolve(__dirname, 'src'),
       },
+      fallback: {
+        "fs": false,
+        "readline": false
+      }
     },
   };
 };
